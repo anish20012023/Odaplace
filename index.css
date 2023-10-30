@@ -128,9 +128,20 @@ body {
 #usa{
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
 }
 .cart-items{
     display: flex;
     gap: 1.2rem;
     font-size: 1.7rem;
+    border-right: .14rem solid  rgb(215, 213, 213);;
+    height: 3.5rem;
+    align-items: center;
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+.user{
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
 }
