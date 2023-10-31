@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    
     overflow: hidden;
 
 }
@@ -50,7 +51,6 @@ body {
     width: calc(100% - 13rem);
     height: 4.3rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
     border-radius: 3rem;
@@ -61,34 +61,39 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+    width: calc(100% - 11rem);
+  
 
 }
 
 #location {
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     display: flex;
     align-items: center;
     gap: .5rem;
+    padding: .6rem 1rem;
     font-size: 1.3rem;
     color: rgb(202, 199, 199);
     font-weight: 500;
+    border-right: .14rem solid rgb(215, 213, 213);
 
 }
 
-#asus {
-    display: flex;
-    align-items: center;
-    height: 75%;
-    margin-left: 1.5rem;
-    padding-left: 1.5rem;
-    border-left: .14rem solid rgb(215, 213, 213);
-    font-size: 1.5rem;
-    font-weight: 600;
+#asus {width: 60%;
+    height: 100%;
+    margin:0  1.5rem;
+    padding-left: 1rem;
+    border-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: rgb(77, 75, 75);
+}
+#asus:focus{
+    outline: none;
 }
 
 .srch-btn {
-    border: 1px solid;
+    
     display: inline-block;
     height: 85%;
     margin-right: .2rem;
@@ -102,7 +107,6 @@ body {
     padding: 0 2rem;
     font-size: 1.42rem;
     cursor: pointer;
-
     align-items: center;
 
 }
@@ -143,6 +147,7 @@ body {
     align-items: center;
     padding-right: 1.5rem;
     cursor: pointer;
+    list-style: none;
 }
 
 .user {
@@ -184,11 +189,12 @@ body {
     padding: .5rem;
     border-left: .14rem solid rgb(192, 189, 189);
     cursor: pointer;
+    list-style: none;
 
 
 }
 
-#catgry-link span {
+#catgry-link li {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -444,14 +450,25 @@ p#chat {
     line-height: 1.7rem;
 
 }
-
+#offer{
+    display: flex;
+    align-items: center;
+}
+#offer-price{
+    display: flex;
+    gap: .5rem;
+}
 #offer i {
     font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
 }
 
 #offer #perc {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
+    display: inline-block;
 }
 
 #dis-price {
@@ -509,6 +526,7 @@ p#chat {
 
 .slctd {
     border-color: #FF6700 !important;
+   
 
 
 }
@@ -522,7 +540,7 @@ p#chat {
 }
 
 .about-item h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .about-item span {
@@ -530,9 +548,14 @@ p#chat {
     align-items: center;
     gap: .5rem;
 }
+.about-item span i{
+    font-size: 1.3rem;
+  
+}
 
 .about-item p {
-    font-weight: 600;
-    line-height: 1.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7rem;
     color: rgb(162, 162, 162);
 }
