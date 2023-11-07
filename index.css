@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    
+
     overflow: hidden;
 
 }
@@ -62,7 +62,7 @@ body {
     align-items: center;
     height: 100%;
     width: calc(100% - 11rem);
-  
+
 
 }
 
@@ -79,21 +79,23 @@ body {
 
 }
 
-#asus {width: 60%;
+#asus {
+    width: 60%;
     height: 100%;
-    margin:0  1.5rem;
+    margin: 0 1.5rem;
     padding-left: 1rem;
     border-style: none;
     font-size: 1.4rem;
     font-weight: 500;
     color: rgb(77, 75, 75);
 }
-#asus:focus{
+
+#asus:focus {
     outline: none;
 }
 
 .srch-btn {
-    
+
     display: inline-block;
     height: 85%;
     margin-right: .2rem;
@@ -158,48 +160,112 @@ body {
 
 /* linl-bar  */
 .link-bar {
-    border-bottom: .14rem solid rgb(215, 213, 213);
+   
     height: 4rem;
     padding: 0 3rem;
     display: flex;
     gap: 2rem;
     align-items: center;
-    color: rgb(135, 133, 133) !important;
+    color: rgb(135, 133, 133);
     font-size: 1.2rem;
     font-weight: 500;
+    background-color: rgb(231, 229, 229);
 
 }
 
+.category {
+ 
+  
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    height: 100%;
+    cursor: pointer;
+   
+}
+
+#dropdown {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding:.3rem 0;
+    top: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(231, 229, 229);
+    color: rgb(135, 133, 133);
+    z-index: 100;
+    visibility: hidden;
+    
+    
+}
+#dropdown li{
+    
+    width: 100%;
+    padding: .8rem 0;
+    padding-left: .5rem;
+    cursor: pointer;
+}
+#dropdown li:hover{
+    background-color: #FF6700;
+    color: white;
+    
+}
+.category:hover>#dropdown{
+    visibility: visible;
+}
+.link-item:hover>#dropdown{
+    visibility: visible;
+}
+.link-icon{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
 .cat-item {
 
     display: flex;
     align-items: center;
+    
 
 }
 
-.catgry {
-    gap: .5rem;
-    cursor: pointer;
 
-
-
-}
 
 #catgry-link {
-    padding: .5rem;
+   
+    height: 100%;
     border-left: .14rem solid rgb(192, 189, 189);
     cursor: pointer;
     list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-left: 2rem;
 
 
 }
 
-#catgry-link li {
+#catgry-link .link-item {
+  
+   height: 100%;
+   
+     position: relative;
     display: flex;
     align-items: center;
-    gap: .5rem;
-    margin-left: 2rem;
+   
+    padding: 0 .5rem;
+    height: 100%;
+    cursor: pointer;
+    min-width: 10rem
+    
+   
+   
+   
 }
+
 
 section {
 
@@ -406,7 +472,7 @@ button#buy-now {
 
 .chat-share p i {
     font-size: 1.6rem;
-   
+
 }
 
 p#chat {
@@ -450,14 +516,17 @@ p#chat {
     line-height: 1.7rem;
 
 }
-#offer{
+
+#offer {
     display: flex;
     align-items: center;
 }
-#offer-price{
+
+#offer-price {
     display: flex;
     gap: .5rem;
 }
+
 #offer i {
     font-size: 1.4rem;
     display: flex;
@@ -526,7 +595,7 @@ p#chat {
 
 .slctd {
     border-color: #FF6700 !important;
-   
+
 
 
 }
@@ -548,9 +617,10 @@ p#chat {
     align-items: center;
     gap: .5rem;
 }
-.about-item span i{
+
+.about-item span i {
     font-size: 1.3rem;
-  
+
 }
 
 .about-item p {
