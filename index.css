@@ -301,15 +301,16 @@ section {
     width: calc(80% / 4);
     border-radius: .5rem;
     display: flex;
+    cursor: pointer;
 
 
 
 
 }
 
-.item-img.img1 {
+
+.img-active{
     border: .14rem solid #f3975a;
-    ;
 
 }
 
@@ -425,7 +426,7 @@ section {
 }
 
 .odr-btn {
-    /* border: 1px solid; */
+   
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -442,6 +443,13 @@ section {
     border: .14rem solid #FF6700;
     color: white;
     cursor: pointer;
+    font-weight: 500;
+   
+}
+.odr-btn button:hover{
+    background-color: #ffffff;
+    color: black; 
+  
 }
 
 button#buy-now {
@@ -449,6 +457,11 @@ button#buy-now {
     background-color: white;
     color: #FF6700;
     border: .14rem solid #FF6700;
+    
+}
+button#buy-now:hover{
+    background-color: #FF6700;
+    color: white;
 }
 
 .chat-share {
@@ -593,12 +606,7 @@ p#chat {
 
 }
 
-.slctd {
-    border-color: #FF6700 !important;
 
-
-
-}
 
 .about-item {
     margin: 3rem;
@@ -628,4 +636,8 @@ p#chat {
     font-weight: 500;
     line-height: 1.7rem;
     color: rgb(162, 162, 162);
+}
+/* option btn and variant btn css */
+.active-opt-btn, .active-var-btn{
+    border-color: #FF6700 !important;
 }
